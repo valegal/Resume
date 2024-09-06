@@ -1,0 +1,224 @@
+%-------------------------
+% Resume in Latex
+% Author : Valentina Galeano
+% Based off of: https://github.com/valegal/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{https://valentinagaleano.com/}{\Large Valentina Galeanoj}} & Email : \href{mailto:valentinagaleanocastro1@gmail.com}{valentinagalena1@gmail.com}\\
+%   \href{httsp://valentinagaleano.com/}{http://www.valentinagaleano.com} & Mobile : +57-300-250-6261 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Valentina Galeano Castro} \\ \vspace{1pt}
+    \small +57 3002506261 $|$ \href{mailto:x@x.com}{\underline{valentinagalena1@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/valegal}{\underline{linkedin.com/in/valegal}} $|$
+    \href{https://github.com/valegal}{\underline{github.com/valegal}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Industrial University of Santander}{Bucaramanga, Colombia GMT-5}
+      {Bachelor's Degree in Software Engineering}{January 2019 -- Present}
+    \resumeSubheading
+      {Google Cybersecurity Professional Certificate}{Colnodo, Remote}
+      {Google Career Certificates}{October 2023 -- April 2024}
+      \resumeSubheading
+      {The Complete Web Development Bootcamp
+}{Udemy Certificates}
+      {Dr. Angela Yu, Developer and Lead Instructor}{May 2022 -- September 2022}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+
+  \resumeSubHeadingListStart
+
+     \resumeSubheading
+      {Full Stack Developer}{January 2021 -- February 2023}
+      {(DSI) Information Systems Division, Industrial University of Santander}{Full-Time}
+      \resumeItemListStart
+        \resumeItem{Developed backend and frontend modules for a large-scale project using SCRUM.}
+        \resumeItem{Implemented interactive tables and user interfaces with Angular CLI, Angular Material, and Angular 17; utilized the MVC pattern with Java, SpringBoot, and Rest APIs.}
+        \resumeItem{Collaborated with the team to ensure timely delivery and product quality using test-driven development.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Freelance Software Engineer}{April 2023 -- Present}
+      {Various SMEs and Clients}{Freelance}
+      \resumeItemListStart
+        \resumeItem{Developed a REST API using FastAPI and PostgreSQL to manage data from learning management systems.}
+        \resumeItem{Designed software architecture and intuitive interfaces using React, Strapi, MySQL, Firebase, and Next.js.}
+        \resumeItem{Built a full-stack web application using NodeJS, React, PostgreSQL, and Docker to analyze GitHub data.}
+      \resumeItemListEnd
+
+
+    \resumeSubHeadingListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+    
+      \resumeProjectHeading
+        {\textbf{Grivp Data System} $|$ \emph{JavaScript, Node.js, Express, React, MySQL, Nginx, Docker}}{February 2024 -- July 2024}
+        \resumeItemListStart
+          \resumeItem{Developed a full-stack web application with Node.js serving a REST API, and React as the frontend.}
+          \resumeItem{Implemented JWT and Cookies for secure authentication and authorization.}
+          \resumeItem{Visualized data collected by Raspberry Pi routines, stored on a local server, accessible via a web platform deployed on Nginx.}
+        \resumeItemListEnd
+
+
+    \resumeProjectHeading
+        {\textbf{Cloud-Based Inventory Management Platform}}{June 2021 -- Present}
+        \resumeItemListStart
+          \resumeItem{Developed a scalable platform for real-time stock tracking across multiple locations using .NET Core.}
+          \resumeItem{Implemented Azure Functions for efficient asynchronous task processing and Azure SQL Database for secure data storage.}
+          \resumeItem{Collaborated with stakeholders to gather requirements and ensure alignment with business goals.}
+        \resumeItemListEnd
+
+    \resumeProjectHeading
+        {\textbf{CI/CD Pipeline for Logistics Product}}{March 2021 -- October 2023}
+        \resumeItemListStart
+          \resumeItem{Built and maintained a CI/CD pipeline for a logistics product using Jenkins and GitHub Actions, automating the build, testing, and deployment processes.}
+          \resumeItem{Containerized the application using Docker and deployed it on AWS, leveraging Terraform for scalable and reliable infrastructure management.}
+          \resumeItem{Facilitated cross-functional team collaboration to integrate continuous feedback, enhancing the product’s efficiency and reliability. Led sprint reviews and retrospectives}
+        \resumeItemListEnd
+
+
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: Java, Python, C/C++, SQL, JavaScript, HTML/CSS, Ruby, .NET} \\
+     \textbf{Frameworks}{: React, Node.js, Next.js, Express, Flask, JUnit, WordPress, Material-UI, Angular, FastAPI, .NET Core} \\
+     \textbf{Developer Tools \& Libraries}{: Git, Docker, Kubernetes, Travis CI, Google Cloud Platform, VS Code, TensorFlow, PyCharm, IntelliJ, Eclipse, Pandas, NumPy, Matplotlib, AWS, Terraform, Jenkins, Azure.} \\
+     \textbf{Languages}{: English, Spanish.}
+    }}
+ \end{itemize}
+
+
+
+%-------------------------------------------
+\end{document}
